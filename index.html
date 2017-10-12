@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Cliffy Shop</title>
+    </head>
+    <body>
+        <div class="photo-view">
+            <canvas width="300" height="200">
+            </canvas>
+            <input id="photo-load" type="file" value="Upload" onclick="photoLoad()">
+        </div>
+
+        <div class="control-box">
+            <div class="sliders">
+                <div><span class="control-title">Brightness</span></div>
+                    <input type="range" min="-50" max="50" value="0" class="slider-control" id="brightSlide">
+                        <p id="brightness-value">Value:</p>
+                <div><span class=control-title>Contrast<span></div>
+                    <input type="range" min="-50" max="50" value="0" class="slider-control" id="contrastSlide">
+                        <p id="contrast-value">Value:</p>
+                <div><span class="control-title">Saturation</span></div>
+                    <input type="range" min="-50" max="50" value="0" class="slider-control" id="saturationSlide">
+                        <p id="saturation-value">Value:</p>
+                <div><input type="button" value="Save"></div>
+
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
