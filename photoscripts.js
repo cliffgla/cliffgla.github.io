@@ -70,6 +70,14 @@ $("#saturation-input").dblclick(function(){
     $("#saturation-value").html("<p>"+ 0 + "</p>");
 });
 
+$(".slider-control").on("touchstart",function(){
+    $(this).addClass("selected");
+    $(this).touchend(function(){
+        $(this).removeClass("selected");
+    });
+
+});
+
 
 
 
