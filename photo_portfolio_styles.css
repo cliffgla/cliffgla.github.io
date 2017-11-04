@@ -1,0 +1,123 @@
+header {
+    text-align: center;
+}
+/*fonts */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+h2 {
+font-family: 'Montserrat', sans-serif;
+font-weight: 100;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*navigation*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5em; 
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+
+}
+/*photo-filter*/
+.photo-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+
+}
+
+.photo-filter a {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+#menu p {
+    cursor: pointer;
+    font-style: italic;
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/*Photos*/
+.photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.photo {
+    width: 300px;
+    align-self: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+
+}
+
+#overlay img {
+    width: 66.67%;
+    margin-top: 10%;
+}
+
+@media (min-width:768px) {
+
+    .photo-filter {
+
+    }
+    .photo-filter a {
+        margin-right: 1em;
+        margin-bottom: 1em;
+        text-decoration: none;
+        display: inline;
+        text-align: center;
+    }
+    nav p {
+        text-align: center;
+    }
+
+    #menu p {
+        display: none;
+
+    }
+    #menu-toggle {
+        display: inline;
+    }
+
+
+}
