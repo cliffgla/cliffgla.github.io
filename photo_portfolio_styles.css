@@ -1,176 +1,205 @@
-/*
-*======CSS Reset======
-*/
-
-body {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: ;
-    background-color: #99ccff;
-    justify-content: space-around;
-
-
-}
-
-li {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-input[type="button"], input[type="file"]{
-    display: none;
-}
-
-#choose-button {
-    cursor: pointer;
-    border: solid;
-    background-color: pink;
-}
-
-/*
-*======Photo Load and View Area======
-*/
-.photo-view {
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    margin-right: 5px;
+header {
     text-align: center;
-    background-color: white;
-    position: relative;
-    flex-grow: 5;
-    flex-direction: column;
-    width: 100%;
-    /*height: 400px;*/
+    margin-top: 5em;
 }
-#photo-load {
-    position: absolute;
-    top: 50%;
-    left: 39%;
+/*fonts */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
 }
 
-#photo-holder {
-    /*width: 80%; */
+h2 {
+font-family: 'Montserrat', sans-serif;
+font-weight: 100;
 }
 
-.hide  {
-    display: none;
+p, a {
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-#image-load {
-    width: 80%;
-    filter: brightness(1) contrast(1) saturate(1);
-}
-/*
-*======Editing Controls======
-*/
+/*navigation*/
 
-.control-box {
+.nav {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: ;
-    padding-top: .5em;
-    background-color: white;
-    margin-top: ;
-    flex-grow: 1;
     flex-wrap: wrap;
+    justify-content: center;
+    /*margin-bottom: .5em;*/
+    /*position: fixed;*/
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+    top: 0;
     width: 100%;
-
-
+    background-color: rgba(200, 200, 200, 1);
+    text-align: center;
+    right: 0;
+    margin-right: auto;
+    /*height:50px;*/
 }
-
-.control-title {
+.nav a {
+    /*display: inline-block;*/
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
     font-size: 1.5em;
-    border-radius: 1%;
-    font-family: sans-serif;
-    padding: 5px;
+    margin-right: 1em;
+    margin-left: 1em;
+    line-height: 70px;
+
 
 }
 
-.control-title span {
-    margin-bttom:10px;
+
+/*photo-filter*/
+.photo-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+
 }
 
-.sliders {
-    list-style: none;
-    margin: auto;
+.photo-filter a {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    display: block;
     text-align: center;
-    background-color: white;
-    margin-top: 0;
-    padding-top: 10px;
 }
 
-
-
-.sliders div {
-    /*padding-bottom: .5em;*/
-}
-
-
-
-.slider-control[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-  border-radius: 8px;
-  height: 2px;
-  border: 1px solid #bdc3c7;
-  background-color: #green;
-
+#menu p {
+    cursor: pointer;
+    font-style: italic;
 
 }
 
-input[type=range]:focus {
-    outline: none;
+#menu-toggle {
+    display: none;
 }
 
-.slider-control[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-	background-color: #ecf0f1;
-	border: 1px solid #bdc3c7;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	cursor: pointer;
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/*Photos*/
+.photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.photo {
+    width: 300px;
+    align-self: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+
+}
+
+#overlay img {
+    width: 66.67%;
+    margin-top: 10%;
+}
+
+/*About Section*/
+
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url("img/cliff_about.jpg");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    background-size: cover;
+    /*display: inline-block;*/
+}
+
+#bio {
+
+    text-align: center;
+    width: 100%;
+}
+
+#bio span {
+    background-color: rgb(245, 245, 245);
+}
+
+#contact {
+    width: 100%;
+    text-align: center;
+}
+
+#contact span {
+    background-color: rgb(245, 245, 245);
 }
 
 
+@media (min-width:768px) {
 
-.selected[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-	background-color: red;
-	border: 1px solid red;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	cursor: pointer;
-    background: gold;
-}
+    nav {
+        margin-left: 2em;
+    }
+    .nav {
+        text-align: left;
+        padding-left: 3em;
+        justify-content: flex-start;
+        padding-left: 2em;
+    }
 
-/*
-*======Media Queries======
-*/
-
-@media (min-width: 768px) {
-
-    .photo-view {
-        width: 70%;
-        /*height: 100%; */
-        margin-bottom: 0;
-
+    header {
+        /*margin-top: 2em;*/
+    }
+    .photo-filter {
 
     }
-    .control-box {
-        width: 28%;
-        flex-wrap: wrap;
-
-}
-
-/*
-@media (min-width: 500px) {
-    .control-box {
-        width: 100%;
+    .photo-filter a {
+        margin-right: 1em;
+        margin-bottom: 1em;
+        text-decoration: none;
+        display: inline;
+        text-align: center;
     }
-*/
 
+
+    #menu p {
+        display: none;
+
+    }
+    #menu-toggle {
+        display: inline;
+    }
+    #about {
+        background-position: right;
+
+    }
+
+    #bio {
+        width: 45%;
+        margin-left: 2em;
+        flex: start;
+    }
+
+    #contact {
+        width: 45%;
+        text-align: center;
+    }
 
 }
