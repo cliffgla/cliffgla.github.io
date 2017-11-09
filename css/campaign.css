@@ -1,0 +1,90 @@
+.nav {
+  margin-left: auto;
+  margin-right: auto; }
+
+body {
+  background-color: #c8c8c8; }
+
+a {
+  color: #eee; }
+
+footer {
+  min-height: 150px;
+  min-height: 125px; }
+  footer h1 {
+    font-family: serif; }
+  footer a {
+    display: block; }
+  footer p {
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 2em; }
+
+.navbar {
+  background-color: #008847;
+  border-bottom: solid white 1px; }
+  .navbar #dropdown-text {
+    color: white; }
+
+.jumbotron {
+  padding-top: 3em;
+  margin-bottom: 0;
+  background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: 0% 40%;
+  min-height: 300px; }
+  .jumbotron h1 {
+    margin-top: .5em;
+    font-family: serif;
+    color: #eee; }
+
+#jumbo-lead {
+  color: #eee; }
+
+#issues-row {
+  background-color: #008847;
+  padding-top: .5em; }
+
+.issues-card {
+  padding-top: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px; }
+  .issues-card h1 {
+    font-family: serif;
+    text-align: center; }
+  .issues-card img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; }
+  .issues-card p {
+    text-align: center; }
+  .issues-card .issues-button {
+    margin-bottom: 1em;
+    background-color: #ffc107;
+    border-radius: 5px;
+    padding: .5em 1em;
+    bottom: 0; }
+
+#footer-mail {
+  padding-bottom: 5px; }
+
+@media (min-width: 768px) {
+  .nav {
+    margin-left: 0; }
+
+  .jumbotron {
+    background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
+    background-size: cover;
+    background-position: 60%; }
+
+  .issues-card img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+/*# sourceMappingURL=campaign.css.map */
