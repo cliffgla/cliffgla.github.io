@@ -1,0 +1,126 @@
+/*CSS Reset*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*Base Styles*/
+body {
+    margin: 0;
+    /*background-color: #FFFC9A;*/
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    border-bottom: solid black 1px;
+    height: 50px;
+    background-color: white;
+    z-index: 5;
+    position: fixed;
+    top:0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+
+
+
+
+}
+
+nav a {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+/*Main Content*/
+.title {
+    margin-top: 80px;
+    text-align: center;
+    font-family: "Quando", serif;
+
+}
+
+
+
+
+
+.col {
+    margin-top: 70px;
+    display: grid;
+    grid-gap: 1em;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+
+}
+
+.card h2 {
+    transform: translateY(-200px);
+    background-color: rgba(255,255,255,.85);
+    font-family: serif;
+    height: 50px;
+}
+
+.card h2:first-of-type::first-letter {
+    font-size: 50px;
+    color: red;
+}
+
+}
+
+.card {
+    /*background-color: red;*/
+    border: solid black 1px;
+
+}
+
+
+
+.card img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+
+
+    nav {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        text-align: left;
+        padding-left: 4em;
+
+    }
+
+    .logo {
+        height: 50px;
+        width: 100%;
+        background-color: goldenrod;
+    }
+
+
+
+    .col {
+        margin-top: 70px;
+
+    }
+
+}
