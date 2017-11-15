@@ -138,7 +138,7 @@ header p {
 /*Portfolio Specifics*/
 
 #photo-port {
-    background-image: url("img/photo-port.png");
+    background-image: url("../img/photo-port.png");
     background: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,21 +148,21 @@ header p {
 
 
 #magazine {
-    background-image: url("img/magazine.png");
+    background-image: url("../img/magazine.png");
     background: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #campaign {
-    background-image: url("img/campaign.png");
+    background-image: url("../img/campaign.png");
     background: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #photo-edit {
-    background-image: url("img/photo-edit.png");
+    background-image: url("../img/photo-edit.png");
     background: cover;
     background-repeat: no-repeat;
     background-position: center;
