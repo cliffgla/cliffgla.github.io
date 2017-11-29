@@ -2,3 +2,7 @@
 border: 1px solid black; 
 margin-bottom: 1em; 
 }
+
+audio {
+background-color:white!important; 
+}
