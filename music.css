@@ -1,7 +1,4 @@
-body :nth-child(even) {
-background-color: rgba(128, 128, 128, .7); 
-}
-
-audio :nth-child(even){
-background-color: rgba(128, 128, 128, .7); 
+.music {
+border: 1px solid black; 
+margin-bottom: 1em; 
 }
